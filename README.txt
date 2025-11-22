@@ -18,9 +18,11 @@ The site showcases my projects, experience, achievements, and provides ways to g
 - **GitHub Pages** for hosting  
 
 ##  File Structure
-│── index.html # Main webpage
-│── assets/ # Images, icons, styles
-│── files/ # CV, academic paper, PDFs
-│── css/ # Stylesheets
-│── js/ # Scripts
-│── README.md
+/
+│── index.html           # Main webpage
+│── assets/              # Images, icons, styles
+│── files/               # CV, academic paper, PDFs
+│── css/                 # Stylesheets
+│── js/                  # Scripts
+│── README.md            # You are here
+/
