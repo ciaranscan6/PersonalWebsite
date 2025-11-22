@@ -28,12 +28,13 @@
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
 							<li class="active"><a href="about-me.html">About Me</a></li>
-							<li><a href="hobbies-and-ach.html">Hobbies and Achievements</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ciar%C3%A1n-scanlon-740554268/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.instagram.com/ciaran_scanlon3/" class="icon brands fa-instagram"><span class="label" target="_blank">Instagram</span></a></li>
-							<li><a href="https://github.com/ciaranscan6" class="icon brands fa-github"><span class="label" target="_blank">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -78,7 +79,7 @@
 									<p class="centered">
 										If you’d like to see more detail about my experience, skills, and projects, you can view my CV below:
 									</p>
-
+									
 									<div class="pdf-preview">
 										<iframe src="files/Ciarán_Scanlon_CV.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
 									</div>
@@ -91,6 +92,78 @@
 										</li>
 									</ul>
 							</section>
+
+								<!-- Hobbies: Four mini slideshows -->
+							<h2 class="centered">Active Hobbies</h2>
+							<section class="posts">
+									<article>
+										<header>
+											<h2><a href="#">Gaelic Football</a></h2>
+										</header>
+
+										<a href="#" class="image fit">
+											<img id="hobby-rotator-gaelic" src="images/hobbies/gaelic1.png" alt="Gaelic football" />
+										</a>
+
+										<p>
+											Gaelic football keeps me fit, sharp, and focused on teamwork. It teaches discipline and resilience I apply to real-world problem solving.
+										</p>
+									</article>
+
+
+									<article>
+										<header>
+											<h2><a href="#">Hiking</a></h2>
+										</header>
+
+										<a href="#" class="image fit">
+											<img id="hobby-rotator-hiking" src="images/hobbies/hiking1.jpg" alt="Hiking" />
+										</a>
+
+										<p>
+											I love exploring nature and finding new trails. Hiking helps me reset mentally and return to challenges with a fresh perspective.
+										</p>
+									</article>
+
+
+
+									<article>
+										<header>
+											<h2><a href="#">Surfing</a></h2>
+										</header>
+
+										<a href="#" class="image fit">
+											<img id="hobby-rotator-surfing" src="images/hobbies/surf1.jpg" alt="Surfing" />
+										</a>
+
+										<p>
+											Surfing challenges my balance, focus, and patience. It’s constant improvement — a lot like software development.
+										</p>
+									</article>
+
+
+
+									<article>
+										<header>
+											<h2><a href="#">Snowboarding</a></h2>
+										</header>
+
+										<a href="#" class="image fit">
+											<img id="hobby-rotator-snow" src="images/hobbies/snow1.jpg" alt="Snowboarding" />
+										</a>
+
+										<p>
+											Snowboarding is fast, technical, and thrilling — perfect for pushing myself outside my comfort zone.
+										</p>
+									</article>
+
+
+
+							</section>
+								
+
+						
+
 					</div>
 
 				<!-- Footer -->
@@ -137,9 +210,9 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/ciar%C3%A1n-scanlon-740554268/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.instagram.com/ciaran_scanlon3/" class="icon brands alt fa-instagram"><span class="label" target="_blank">Instagram</span></a></li>
-									<li><a href="https://github.com/ciaranscan6" class="icon brands alt fa-github"><span class="label" target="_blank">GitHub</span></a></li>
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -160,6 +233,55 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- JS: mini-slideshows for each hobby -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+
+					const rotators = [
+						{
+							id: 'hobby-rotator-gaelic',
+							images: ['images/hobbies/gaelic1.png', 'images/hobbies/gaelic2.jpg']
+						},
+						{
+							id: 'hobby-rotator-hiking',
+							images: ['images/hobbies/hiking1.jpg', 'images/hobbies/hiking2.jpg', 'images/hobbies/hiking3.jpg']
+						},
+						{
+							id: 'hobby-rotator-surfing',
+							images: ['images/hobbies/surf1.jpg', 'images/hobbies/surf2.jpg']
+						},
+						{
+							id: 'hobby-rotator-snow',
+							images: ['images/hobbies/snow1.jpg', 'images/hobbies/snow2.jpg']
+						}
+					];
+
+					rotators.forEach(rot => {
+						const el = document.getElementById(rot.id);
+						if (!el) return;
+
+						let current = 0;
+
+						function rotate() {
+							el.classList.add('fade-out');
+
+							setTimeout(() => {
+								current = (current + 1) % rot.images.length;
+								el.src = rot.images[current];
+								el.classList.remove('fade-out');
+							}, 400);
+						}
+
+						setInterval(rotate, 5000);
+					});
+				});
+			</script>
+
+
+
+
+
 
 	</body>
 </html>

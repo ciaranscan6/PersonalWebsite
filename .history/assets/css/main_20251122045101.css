@@ -4736,12 +4736,11 @@ input, select, textarea {
 	}
 
 	.split-section .pdf-preview {
-		width: 1000px;
+		width: 170px;
 		height: 250px;
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		overflow: hidden;
-		margin-top: 80px;
 	}
 
 	.split-section .pdf-preview iframe {

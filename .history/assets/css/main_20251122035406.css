@@ -4695,10 +4695,10 @@ input, select, textarea {
 	/* Force all hobby card images to a fixed size */
 	.posts .image.fit img {
 		width: 100%;
-		height: 400px;        
+		height: 300px;        
 		object-fit: cover;   
 		border-radius: 0.5rem;
-		transition: opacity 0.9s ease;
+		transition: opacity 0.4s ease;
 	}
 
 	/* Fade animation for rotators */
@@ -4706,56 +4706,4 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-
-	.pdf-preview {
-		width: 100%;
-		max-width: 300px;      /* controls preview width */
-		height: 400px;         /* controls preview height */
-		margin: 0 auto 2rem;   /* centers the preview */
-		border: 1px solid #ccc;
-		border-radius: 10px;
-		overflow: hidden;
-	}
-
-	.pdf-preview iframe {
-		width: 100%;
-		height: 100%;
-		border: none;
-	}
-
-	.split-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 3rem;
-	}
-
-	.split-section img {
-		max-width: 270px;      /* control image size */
-		border-radius: 10px;
-	}
-
-	.split-section .pdf-preview {
-		width: 1000px;
-		height: 250px;
-		border: 1px solid #ccc;
-		border-radius: 10px;
-		overflow: hidden;
-		margin-top: 80px;
-	}
-
-	.split-section .pdf-preview iframe {
-		width: 100%;
-		height: 100%;
-		border: none;
-	}
-
-	/* Mobile-friendly collapse */
-	@media (max-width: 800px) {
-		.split-section {
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
-	}
 

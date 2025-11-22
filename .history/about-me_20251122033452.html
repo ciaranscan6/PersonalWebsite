@@ -28,12 +28,13 @@
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
 							<li class="active"><a href="about-me.html">About Me</a></li>
-							<li><a href="hobbies-and-ach.html">Hobbies and Achievements</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ciar%C3%A1n-scanlon-740554268/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.instagram.com/ciaran_scanlon3/" class="icon brands fa-instagram"><span class="label" target="_blank">Instagram</span></a></li>
-							<li><a href="https://github.com/ciaranscan6" class="icon brands fa-github"><span class="label" target="_blank">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -74,15 +75,10 @@
 
 								<!-- CV Button -->
 							<section>
-									<h2 class="centered">Curriculum Vitae</h2>
-									<p class="centered">
+									<h2>Curriculum Vitae</h2>
+									<p>
 										If you’d like to see more detail about my experience, skills, and projects, you can view my CV below:
 									</p>
-
-									<div class="pdf-preview">
-										<iframe src="files/Ciarán_Scanlon_CV.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
-									</div>
-
 									<ul class="actions special">
 										<li>
 											<a href="files\Ciarán_Scanlon_CV.pdf" target="_blank" class="button large">
@@ -91,6 +87,62 @@
 										</li>
 									</ul>
 							</section>
+
+								<!-- Hobbies: Four mini slideshows -->
+							<section class="posts">
+								<h2>Active Hobbies</h2>
+									<article>
+										<header>
+											<span class="date">May 14, 2025</span>
+											<h2><a href="#">Forecasting <br> Solar Energy</a></h2>
+										</header>
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="solar device image" /></a>
+										<p>This is my final year project from university. It is a fully functioning solar acquisition device as well as data collection, model training and some data analysis. I co-authored a paper on this project also all details can be found in the link.</p>
+										<ul class="actions special">
+											<li><a href="#" class="button">Forecasting Solar Energy Project</a></li>
+										</ul>
+									</article>
+									<article>
+										<header>
+											<span class="date">April 22, 2017</span>
+											<h2><a href="#">Primis eget<br />
+											imperdiet lorem</a></h2>
+										</header>
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="image of other project" /></a>
+										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+										<ul class="actions special">
+											<li><a href="#" class="button">Full Story</a></li>
+										</ul>
+									</article>
+									<article>
+										<header>
+											<span class="date">April 18, 2017</span>
+											<h2><a href="#">Ante mattis<br />
+											interdum dolor</a></h2>
+										</header>
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+										<ul class="actions special">
+											<li><a href="#" class="button">Full Story</a></li>
+										</ul>
+									</article>
+									<article>
+										<header>
+											<span class="date">April 14, 2017</span>
+											<h2><a href="#">Tempus sed<br />
+											nulla imperdiet</a></h2>
+										</header>
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+										<ul class="actions special">
+											<li><a href="#" class="button">Full Story</a></li>
+										</ul>
+									</article>
+							</section>
+								
+
+						
+
 					</div>
 
 				<!-- Footer -->
@@ -137,9 +189,9 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/ciar%C3%A1n-scanlon-740554268/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.instagram.com/ciaran_scanlon3/" class="icon brands alt fa-instagram"><span class="label" target="_blank">Instagram</span></a></li>
-									<li><a href="https://github.com/ciaranscan6" class="icon brands alt fa-github"><span class="label" target="_blank">GitHub</span></a></li>
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -160,6 +212,54 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- JS: mini-slideshows for each hobby -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const rotators = [
+						{
+							id: 'gaelic-rotator',
+							images: ['images/gaelic1.jpg', 'images/gaelic2.jpg']
+						},
+						{
+							id: 'hiking-rotator',
+							images: ['images/hiking1.jpg', 'images/hiking2.jpg']
+						},
+						{
+							id: 'surfing-rotator',
+							images: ['images/surf1.jpg', 'images/surf2.jpg']
+						},
+						{
+							id: 'snowboarding-rotator',
+							images: ['images/snow1.jpg', 'images/snow2.jpg']
+						}
+					];
+
+					rotators.forEach(function (rotator) {
+						const imgElement = document.getElementById(rotator.id);
+						if (!imgElement) return;
+
+						let current = 0;
+
+						function rotate() {
+							imgElement.classList.add('fade-out');
+
+							setTimeout(function () {
+								current = (current + 1) % rotator.images.length;
+								imgElement.src = rotator.images[current];
+								imgElement.classList.remove('fade-out');
+							}, 400); // matches CSS transition
+						}
+
+						// change every 3 seconds
+						setInterval(rotate, 5000);
+					});
+				});
+			</script>
+
+
+
+
 
 	</body>
 </html>

@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Small custom styles for the hobbies section -->
+		<style>
+			/* Force a clean 2×2 grid on larger screens */
+			.posts {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 2rem;
+			}
+
+			@media screen and (max-width: 800px) {
+				.posts {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			/* Uniform image area so the text doesn't move when images change */
+			.posts .image.fit img {
+				width: 100%;
+				height: 200px;      /* adjust height if you like */
+				object-fit: cover;  /* keeps all images same visual size */
+				border-radius: 0.5rem;
+				transition: opacity 0.4s ease;
+			}
+
+			.posts .image.fit img.fade-out {
+				opacity: 0;
+			}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Ciarán Scanlon</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="about-me.html">About Me</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">November 21, 2025</span>
+									<h1>A Bit About Me</h1>
+									<p>
+										I’m a 23-year-old Computer Science graduate from University College Dublin, originally from Longford, Ireland.
+										I’m outgoing, adventurous, and love solving real-world problems with technology.
+									</p>
+								</header>
+
+								<!-- Main portrait / banner image -->
+								<div class="image main">
+									<img src="images\IMG_2796.JPG" alt="Photo of Ciarán Scanlon" />
+								</div>
+
+								<!-- About Me Content -->
+								<p>
+									I studied Computer Science at <strong>University College Dublin (UCD)</strong>, where I developed a strong foundation in
+									software development, problem solving, and working with others on challenging projects. I’m particularly interested in
+									<strong>cybersecurity</strong>, <strong>sustainability</strong>, and building software that can make a meaningful difference
+									to people and the planet.
+								</p>
+
+								<p>
+									I enjoy working on projects where I can learn quickly, think creatively, and collaborate with others. Whether it’s
+									designing secure systems, improving user experiences, or experimenting with new technologies, I’m always looking for
+									opportunities to grow and contribute.
+								</p>
+
+								<!-- CV Button -->
+								<section>
+									<h2>Curriculum Vitae</h2>
+									<p>
+										If you’d like to see more detail about my experience, skills, and projects, you can view my CV below:
+									</p>
+									<ul class="actions special">
+										<li>
+											<a href="files\Ciarán_Scanlon_CV.pdf" target="_blank" class="button large">
+												View My CV
+											</a>
+										</li>
+									</ul>
+								</section>
+
+								<!-- Hobbies: Four mini slideshows -->
+								<section class="posts">
+
+									<!-- Gaelic Football -->
+									<article>
+										<header>
+											<span class="date">Active Hobby</span>
+											<h2><a href="#">Gaelic<br>Football</a></h2>
+										</header>
+										<a href="#" class="image fit">
+											<img id="gaelic-rotator" src="images/gaelic1.jpg" alt="Gaelic football photos" />
+										</a>
+										<p>
+											Gaelic football has always been a huge part of my life. It keeps me fit, sharp, and focused on teamwork. The
+											discipline and resilience it teaches me carry over into how I tackle complex technical challenges.
+										</p>
+									</article>
+
+									<!-- Hiking -->
+									<article>
+										<header>
+											<span class="date">Active Hobby</span>
+											<h2><a href="#">Hiking</a></h2>
+										</header>
+										<a href="#" class="image fit">
+											<img id="hiking-rotator" src="images/hiking1.jpg" alt="Hiking photos" />
+										</a>
+										<p>
+											Hiking helps me reset, think clearly, and find inspiration away from the screen. Exploring trails and mountains is
+											a great way to disconnect and return to problems with a fresh perspective.
+										</p>
+									</article>
+
+									<!-- Surfing -->
+									<article>
+										<header>
+											<span class="date">Active Hobby</span>
+											<h2><a href="#">Surfing</a></h2>
+										</header>
+										<a href="#" class="image fit">
+											<img id="surfing-rotator" src="images/surf1.jpg" alt="Surfing photos" />
+										</a>
+										<p>
+											Surfing challenges my balance, patience, and focus. I enjoy the constant progression—very similar to learning new
+											technologies and refining my skills as a developer.
+										</p>
+									</article>
+
+									<!-- Snowboarding -->
+								  	<article>
+										<header>
+											<span class="date">Active Hobby</span>
+											<h2><a href="#">Snowboarding</a></h2>
+										</header>
+										<a href="#" class="image fit">
+											<img id="snowboarding-rotator" src="images/snow1.jpg" alt="Snowboarding photos" />
+										</a>
+										<p>
+											I discovered snowboarding on winter trips abroad and loved it instantly. It pushes me out of my comfort zone and
+											matches my love of learning new skills and trying new challenges.
+										</p>
+									</article>
+
+								</section>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="https://formspree.io/f/xwpzvnny">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" required />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" required />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3" required></textarea>
+									</div>
+								</div>
+
+								<input type="hidden" name="_subject" value="New Message From Portfolio Site">
+
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Chateau on the Ridge, Big White Ski Resort<br />
+								Kelowna, BC Canada</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(672) 383-1005</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">cpt.scanlon@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- JS: mini-slideshows for each hobby -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const rotators = [
+						{
+							id: 'gaelic-rotator',
+							images: ['images/gaelic1.jpg', 'images/gaelic2.jpg']
+						},
+						{
+							id: 'hiking-rotator',
+							images: ['images/hiking1.jpg', 'images/hiking2.jpg']
+						},
+						{
+							id: 'surfing-rotator',
+							images: ['images/surf1.jpg', 'images/surf2.jpg']
+						},
+						{
+							id: 'snowboarding-rotator',
+							images: ['images/snow1.jpg', 'images/snow2.jpg']
+						}
+					];
+
+					rotators.forEach(function (rotator) {
+						const imgElement = document.getElementById(rotator.id);
+						if (!imgElement) return;
+
+						let current = 0;
+
+						function rotate() {
+							imgElement.classList.add('fade-out');
+
+							setTimeout(function () {
+								current = (current + 1) % rotator.images.length;
+								imgElement.src = rotator.images[current];
+								imgElement.classList.remove('fade-out');
+							}, 400); // matches CSS transition
+						}
+
+						// change every 3 seconds
+						setInterval(rotate, 5000);
+					});
+				});
+			</script>
+
+
+
+
+
+	</body>
+</html>

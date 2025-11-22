@@ -4741,7 +4741,6 @@ input, select, textarea {
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		overflow: hidden;
-		margin-top: 80px;
 	}
 
 	.split-section .pdf-preview iframe {
